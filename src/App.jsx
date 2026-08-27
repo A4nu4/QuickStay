@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { Routes, useLocation, Route } from "react-router-dom";
 import AllRooms from "./pages/AllRooms";
 import RoomDetails from "./pages/RoomDetails";
+import MyBookings from "./pages/MyBookings";
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<AllRooms />} />
           <Route path="/rooms/:id" element={<RoomDetails />} />
+          <Route path="/my-bookings" element={<MyBookings />} />
         </Routes>
       </div>
       <Footer />
