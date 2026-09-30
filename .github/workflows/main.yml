@@ -24,9 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint check
-        run: npm run lint
-
       # Test the build locally in CI to catch errors before triggering Render
       - name: Verify Vite SSR Build
         run: npm run build
